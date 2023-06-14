@@ -1,0 +1,103 @@
+/* Start header (routes) */
+@media (max-width:768px) {
+    header .container #routes {
+        position: fixed;
+        width: 100%;
+        height: 360px;
+        opacity: 0;
+        transition: 0.4s;
+        background-color: #ddd;
+        display: grid;
+        place-items: center;
+        top: 60px;
+        right: -100%;
+        padding: 15px 0;
+    }
+
+    header .container #routes a {
+        width: 90%;
+        color: var(--main-color);
+    }
+
+    header .container #routes a:nth-child(5) {
+        border: unset;
+        border-bottom: 2px solid var(--main-color);
+    }
+
+    header .container #routes.show {
+        right: 0%;
+        opacity: 1;
+    }
+
+    header .container #routes a {
+        background-color: var(--layer-color);
+        border-bottom: 2px solid var(--main-color);
+        border-radius: unset;
+        height: 50px;
+    }
+
+    .menu {
+        background-color: #fff;
+        font-weight: bold;
+        padding: 6px;
+        cursor: pointer;
+        display: grid;
+        place-items: center;
+    }
+
+    /* End header (routes) */
+
+    /* Start contact-us section  */
+    #contact-us {
+        height: 55vh;
+        background-image: url('./images/banner.jpg');
+        background-size: cover;
+    }
+
+    #contact-us .container img {
+        height: auto;
+    }
+
+    #contact-us .container {
+        flex-direction: column;
+        display: grid;
+        place-content: center;
+    }
+
+    #contact-us .container .r-col {
+        position: relative;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        padding: 20px 10px;
+        opacity: .9;
+        color: var(--ft-color);
+        font-weight: bold;
+    }
+
+    #contact-us .container .l-col img {
+        width: 100%;
+        display: none;
+    }
+
+    /* End contact-us section  */
+
+    /* Start location section  */
+    #location iframe {
+        height: 350px !important;
+    }
+
+    /* End location section  */
+
+    #faqs h1{
+        font-size: 18px;
+        line-height: 1.7;
+    }
+}
+
+@media (min-width:1199px) {
+    .container{
+        width: 1100px;
+    }
+}
+
