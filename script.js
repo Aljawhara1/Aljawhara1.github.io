@@ -103,59 +103,8 @@ function scrollTo(element) {
     } else {
         element.id = `scrollTo-function`;
         location.href = `#${element.id}`;
-        localStorage.setItem('i', i++);
-        element.removeAttribute('id');
     }
 }
-
-Element.prototype.animation = function (type, isObserver = true) {
-    window.addEventListener('scroll', (ev) => {
-        console.log(ev);
-    })
-
-
-    const anime = (opacity = '1', transform = 'translate(0);', transition = '1.9', display = 'none') => `opacity:${opacity}; transform : ${transform}; transition:${transition}s;`,
-        reset = anime(1, 'translate(0,0)', 1.9);
-    const width = this.offsetWidth;
-
-    if (type == 'f-left') {
-        this.style.cssText = anime(0, 'translate(-100%,0)', 1.9);
-        setTimeout(() => {
-
-            this.style.cssText = reset
-        }, 1800);
-        // observer.disconnect()
-
-    } else if (type == 'f-right') {
-        this.style.cssText = anime(0, 'translate(100%,0)', 1.9)
-        this.style.cssText = reset
-
-    } else if (type == 'show') {
-        this.style.cssText = anime(0)
-        this.style.cssText = reset
-        // observer.disconnect()
-
-    } else if (type == 'm-show') {
-        this.style.cssText = anime(1,) + 'width:15px !important;height:15px;border-raduis:50%;position:relative;'
-        this.style.cssText = reset + 'width:100% !important;height:100%;border-raduis:unset;position:relative;'
-        // observer.disconnect()
-
-    }
-
-
-}
-
-// servicesSec.animation('m-show')
-
-const sections = Array.from($('body').children).remove(1, -1), sectionsTarge = Array.from(sections).remove(1, -1);
-
-// console.log(sections);
-// sections[0].animation('f-left', false);
-// sections[1].animation('f-right', false);
-
-// sectionsTarge.forEach((e, i) => {
-//     i % 2 == 0 ? e.animation('f-left') : e.animation('f-right');
-// })
 
 function copyToClipboard(text) {
     return navigator.clipboard.writeText(text)
