@@ -14,7 +14,7 @@ routes.forEach((e) => {
         routes.forEach(e => e.classList.remove('click'))
         e.classList.add('click')
         routesContainer.classList.remove('show')//in mobile deivces
-        $('#brg-menue').textContent = 'menue'
+        $('#brg-menue').textContent = 'menu'
     })
 })
 /******************@End_header *********************/
