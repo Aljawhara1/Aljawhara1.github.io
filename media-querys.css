@@ -89,6 +89,10 @@
 
     /* End location section  */
 
+    #keywords ul li h1{
+        font-size: 17px;
+    }
+
     #faqs h1{
         font-size: 18px;
         line-height: 1.7;
