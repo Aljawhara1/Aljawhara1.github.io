@@ -2,7 +2,6 @@ console.log('Hello we are thunder team ⚡');
 
 $a('img').forEach(img=>{
     img.setAttribute('loading','lazy')
-    // img.src = `https://aljawhara1.github.io/aljawhara1-images/${img.src}`
 })
 
 import { $, $a , component , scrollTo ,copyToClipboard} from './cocktail.js';
@@ -15,6 +14,7 @@ routes.forEach((e) => {
         routes.forEach(e => e.classList.remove('click'))
         e.classList.add('click')
         routesContainer.classList.remove('show')//in mobile deivces
+        $('#brg-menue').textContent = 'menue'
     })
 })
 /******************@End_header *********************/
