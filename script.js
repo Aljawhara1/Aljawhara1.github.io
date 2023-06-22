@@ -234,4 +234,3 @@ const keywords = `شركه نقل اثاث بجده
 const klist= component({contentNode:keywords})
 $('#keywords-list').append(klist);
 //127 key words
-
