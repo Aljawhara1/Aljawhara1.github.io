@@ -403,5 +403,6 @@ color: var(--main-color);
 
 #keywords ul::-webkit-scrollbar{
     display: none;
+    color: var(--main-color);
 }
 /*End keywords section  */
