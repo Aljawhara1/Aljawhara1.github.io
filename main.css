@@ -404,4 +404,13 @@ color: var(--main-color);
     display: none;
     color: var(--main-color);
 }
+
+#keywords ul li h1 a{
+    color: #333;
+    transition: .4s;
+}
+
+#keywords ul li h1 a:hover{
+    color: var(--main-color);
+}
 /*End keywords section  */
