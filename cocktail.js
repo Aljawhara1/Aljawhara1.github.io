@@ -892,4 +892,4 @@ export class CocktailDB {
 let i = 0;
 
 const cocktail = 'Welcome in cocktail library';
-export default cocktail;
+export default cocktail; 
