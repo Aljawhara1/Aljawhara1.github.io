@@ -348,7 +348,7 @@ color: var(--main-color);
     width: 50%;
 }
 
-.box a {
+.about-us .container .box a {
     text-decoration: none;
     color: #37517e;
 }
