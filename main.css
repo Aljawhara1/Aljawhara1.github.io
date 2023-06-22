@@ -308,7 +308,7 @@ color: var(--main-color);
 #contact-us .container .r-col .call-us-div{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 20px;
 }
 
 #contact-us .container .r-col .call-us-div #copy{
@@ -391,3 +391,17 @@ color: var(--main-color);
     width: 49%;
 }
 /* End services section  */
+
+/*Start keywords section  */
+#keywords ul{
+    max-height: 500px;
+    overflow-y: scroll;
+    background-color: var(--layer-color);
+    padding: 10px 20px;
+    scrollbar-width: 0px;
+}
+
+#keywords ul::-webkit-scrollbar{
+    display: none;
+}
+/*End keywords section  */
