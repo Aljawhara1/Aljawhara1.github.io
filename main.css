@@ -312,7 +312,7 @@ color: var(--main-color);
 }
 
 #contact-us .container .r-col .call-us-div #copy{
-   cursor: pointer;
+   cursor: pointer; 
    transition: .4s;
 }
 
