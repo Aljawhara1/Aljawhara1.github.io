@@ -216,7 +216,8 @@ const keywords = `شركه نقل اثاث بجده
 افضل شركات نقل اثاث بجدة`.split('\n').map((e)=>{
   return  e = `<li title="${e}"><h1 title ="${e}"><a title="${e}" href="https://aljawhara1.github.io">${e}</a></h1></li>`
 }).join('');
-const klist= component({contentNode:keywords})
-$('#keywords-list').append(klist);
-//127 key words
+document.addEventListener('DOMContentLoaded',()=>{
+    const klist= component({contentNode:keywords});
+    $('#keywords-list').append(klist);
+})
 
